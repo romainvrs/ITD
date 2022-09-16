@@ -1,4 +1,4 @@
-﻿param (
+param (
     [string]$Subject = "I HAZ BEEN PWN3D",
     [string]$Body = "I HAZ BEEN PWN3D BY CYSECURIT!",
 	[string]$Recipient = ""
@@ -7,7 +7,7 @@ $userMail = ""
 try {
 	$userMail = ([adsi]"LDAP://$(whoami /fqdn)").mail
 } catch {
-	$userMail = ($env:USERNAME+"@email.com")
+	$userMail = ($env:USERNAME+"@limagrain.com")
 	if($Recipient) { $Recipient = $targetEmailAddress }
 }
 try {
