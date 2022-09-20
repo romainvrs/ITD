@@ -7,7 +7,7 @@ $userMail = ""
 try {
 	$userMail = ([adsi]"LDAP://$(whoami /fqdn)").mail
 } catch {
-	$userMail = ($env:USERNAME+"@limagrain.com")
+	$userMail = ($env:USERNAME+"@email.com")
 	if($Recipient) { $Recipient = $targetEmailAddress }
 }
 try {
