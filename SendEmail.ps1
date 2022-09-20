@@ -1,6 +1,6 @@
 param (
-    [string]$Subject = "I HAZ BEEN PWN3D",
-    [string]$Body = "I HAZ BEEN PWN3D BY CYSECURIT!",
+    [string]$Subject = "I HAVE BEEN PWNED",
+    [string]$Body = "I HAVE BEEN PWNED BY MY SECURITY TEAM",
 	[string]$Recipient = ""
 )
 $userMail = ""
